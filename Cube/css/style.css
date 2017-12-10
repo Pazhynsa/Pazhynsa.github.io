@@ -1,0 +1,138 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+td {
+    margin: 0;
+    padding: 0;
+    border: 10px solid black;
+    text-align: center;
+    /* width: 40px;  */
+}
+
+table {
+    border-collapse: collapse;
+ /*    width: 440px;
+    height: 440px; */
+}
+
+
+
+.first {
+    border-left: none;
+    border-top: none;
+    width: 80px;
+    height: 40px;
+}
+
+.two {
+      border-top: none;
+      width: 200px;
+      height: 40px;
+}
+
+.a {
+    border-right: none;
+    border-top: none;
+    background-color: yellow;
+    width: 120px;
+    height: 40px;
+}
+
+
+.b {
+    width: 40px;
+    height: 120px;
+    border-left: none;
+}
+
+.c {
+    width: 240px;
+    height: 240px;
+    background-color: red;
+}
+
+.d {
+    border-right: none;
+    background-color: yellow;
+    width: 120px;
+    height: 120px;    
+}
+
+.e {
+    width: 40px;
+    height: 160px;
+    border-left: none;
+}
+
+.f {
+    width: 80px;
+    height: 120px;
+}
+
+.g {
+    border-right: none;
+    width: 80px;
+    height: 120px;
+}
+.h {
+    width: 80px;
+    height: 120px;
+    background-color: black;
+}
+
+.i {
+    width: 120px;
+    height: 40px;
+}
+
+.j {
+    border-right: none;
+    width: 160px;
+    height: 40px;
+}
+
+.k {
+    width: 40px;
+    height: 120px;
+    border-left: none;
+    border-bottom: none;
+    background-color: yellow;
+}
+
+.l {
+    width: 120px;
+    height: 40px;
+}
+.m {
+    border-right: none;
+    width: 160px;
+    height: 80px;
+    background-color: #00f;
+}
+
+.n {
+    border-bottom: none;
+    width: 120px;
+    height: 80px;
+}
+
+.o {
+    background-color: black;
+    width: 120px;
+    height: 40px;
+}
+
+.p {
+    border-right: none;
+    border-bottom: none;
+    width: 280px;
+    height: 40px;
+}
+.x, .x td {
+    border: 1px solid white;
+    color: white;
+
+}
