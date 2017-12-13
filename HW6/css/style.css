@@ -1,0 +1,141 @@
+.body {
+    background-image: url('../img/bg.jpg');
+    width: 1000px;
+    height: 1310px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* HEADER */
+
+.phone {
+    display: block;
+    /* position: absolute; */
+    /* height: 16px;
+    width: 400px; */
+    margin: 0;
+    padding: 0;
+    /* margin-left: 45px; */
+}
+
+.phone ul {
+    padding: 0;
+    margin: 0;
+}
+
+.phone ul > li {
+    float: left;
+    list-style: none;
+    padding: 5px;
+    margin: 16px 0;
+    height: 26px;
+}
+
+.phone ul > li > p {
+    margin: 0;
+}
+
+.form {
+    float: left;
+    background-color: #1b5b7c;
+    width: 495px;
+    height: 26px;
+    border-radius: 5px;
+    margin-top: 16px;
+}
+
+.man {
+    float: left;
+    padding: 3px;
+}
+
+[type="text"], [type="password"] {
+    width: 114px;
+    max-height: 16px;
+    margin: 4px 1px;
+    padding: 0;
+    border: none;
+}
+
+[type="text"]::-webkit-input-placeholder, 
+[type="password"]::-webkit-input-placeholder {
+    color: #5e696d;
+    font-size: 11px;
+    padding: 4px;
+}
+
+[type="submit"] {
+    background-color: #1b5b7c;
+    color: white;
+    border: none;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    font-size: 12px;
+}
+
+.entrance {
+    border-right: 1px solid white;
+    padding: 4px;
+}
+
+a:hover {
+    color: #bfbfbf;
+}
+
+.forgot {
+    color: white;
+    font-family: sans-serif;
+    font-size: 12px;
+    padding: 5px 20px 5px 10px;
+}
+
+.map {
+    float: left;
+    border: 1px solid #bfbfbf;
+    border-radius: 15px;
+    padding: 3px;
+    margin: 16px 15px 5px;
+}
+
+.map a {
+    padding: 5px;
+}
+
+.image {
+    clear: both;
+    padding: 0;
+    margin: 0;
+    width: 910px;
+    height: 235px;
+}
+
+.menu {
+    display: block;
+    height: 40px;
+    width: 910px;
+    background-color: #191b1e;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+.menu ul li {
+    float: left;
+    padding: 6px 20px;
+    margin: 4px;
+    list-style: none;
+    border-radius: 15px;
+
+}
+
+.menu ul li:hover {
+    background-color: #1d6081;
+}
+
+.menu ul li a {
+    color: #bfbfbf;
+    text-decoration: none;
+}
