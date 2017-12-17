@@ -33,7 +33,7 @@ ul > li > a {
     padding: 8px;
     text-decoration: none;
     color: white;
-    font-family: Tahoma, 'Segoe UI', Geneva, Verdana, sans-serif;
+    font-family: Tahoma, Verdana, sans-serif;
 }
 
 ul > li > a:hover {
@@ -74,7 +74,7 @@ h1 {
     height: 30px;
     text-align: center;
     color: white;
-    font-family: Tahoma, 'Segoe UI', Geneva, Verdana, sans-serif;
+    font-family: Tahoma, Verdana, sans-serif;
     font-weight: normal;
     border-bottom: 1px solid white;
     padding-bottom: 20px;
@@ -97,6 +97,10 @@ h1 {
     margin-left: 130px;
     margin-top: 25px;
     border-radius: 5px;
+}
+
+.fb:hover {
+    background-color: #1b5288;
 }
 
 [type="text"] {
@@ -143,7 +147,7 @@ h1 {
 [type="email"]::-webkit-input-placeholder, 
 [type="password"]::-webkit-input-placeholder {
     padding-left: 0px;
-    font-family: Tahoma, 'Segoe UI', Geneva, Verdana, sans-serif;
+    font-family: Tahoma, Verdana, sans-serif;
     color: #cccccc;
 }
 
@@ -160,7 +164,7 @@ h1 {
 
 label {
     color: #cccccc;
-    font-family: Tahoma, 'Segoe UI', Geneva, Verdana, sans-serif;
+    font-family: Tahoma, Verdana, sans-serif;
     font-size: 15px;
 }
 
@@ -172,16 +176,20 @@ label {
     color: white;
     width: 150px;
     height: 35px;
-    font-family: Tahoma, 'Segoe UI', Geneva, Verdana, sans-serif;
+    font-family: Tahoma, Verdana, sans-serif;
     font-size: 15px;
     border: none;
     border-radius: 5px;
 }
 
+.create:hover {
+    background-color: #1b5288;
+}
+
 p {
     color: #cccccc;
     text-align: center;
-    font-family: Tahoma, 'Segoe UI', Geneva, Verdana, sans-serif;
+    font-family: Tahoma, Verdana, sans-serif;
     font-size: 13px;
     margin: 20px;
 }
