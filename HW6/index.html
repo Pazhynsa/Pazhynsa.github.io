@@ -40,13 +40,181 @@
 
         <div class="menu">
             <ul>
-                <li><a href="">О КОМПАНИИ</a></li>
-                <li><a href="">ОПЛАТА</a></li>
-                <li><a href="">ДОСТАВКА</a></li>
-                <li><a href="">СТАТЬИ</a></li>
-                <li><a href="">КОНТАКТЫ</a></li>
-                <li><img src="img/purse.png" alt=""></li>
+                <li class="m"><a href="">О КОМПАНИИ</a></li>
+                <li class="m"><a href="">ОПЛАТА</a></li>
+                <li class="m"><a href="">ДОСТАВКА</a></li>
+                <li class="m"><a href="">СТАТЬИ</a></li>
+                <li class="m"><a href="">КОНТАКТЫ</a></li>
+                <li class="purse"><img src="img/purse.png" alt=""></li>
+                <li class="index">товаров:</li>
+                <li class="amount">0</li>
+                <li class="index">на сумму:</li>
+                <li class="money">0,00 грн.</li>
             </ul>
+        </div>
+        <div class="searchCar border">
+            <h5>Поиск по автомобилю</h5>
+            <div class="carDisk">
+                <h6>Диски:</h6>
+                <ul>
+                    <li>Марка <span> авто:</span> 
+                        <select name="" id="">
+                            <option value=""></option>
+                            <option value="audi">audi</option>
+                            <option value="BMW">BMW</option>
+                            <option value="mercedes">mercedes</option>
+                        </select>
+                    </li>
+                    <li>Модель <P> автомобиля:</P>  
+                        <select name="" id="">
+                            <option value=""></option>
+                            <option value="audi">audi</option>
+                            <option value="BMW">BMW</option>
+                            <option value="mercedes">mercedes</option>
+                        </select>
+                    </li>
+                    <li> Год выпуска <P> автомобиля:</P>
+                        <select name="" id="">
+                            <option value=""></option>
+                            <option value="2001">2001</option>
+                            <option value="2002">2002</option>
+                            <option value="2003">2003</option>
+                        </select>
+                    </li>
+                    <li> Комплектация: 
+                        <select name="" id="">
+                            <option value=""></option>
+                            <option value="audi">audi</option>
+                            <option value="BMW">BMW</option>
+                            <option value="mercedes">mercedes</option>
+                        </select>
+                    </li>
+                </ul>
+            </div>
+            <div class="carTire">
+                <h6>Шины:</h6>
+                <ul>
+                    <li>Марка <span> авто:</span> 
+                        <select name="" id="">
+                            <option value=""></option>
+                            <option value="audi">audi</option>
+                            <option value="BMW">BMW</option>
+                            <option value="mercedes">mercedes</option>
+                        </select>
+                    </li>
+                    <li>Модель <P> автомобиля:</P>  
+                        <select name="" id="">
+                            <option value=""></option>
+                            <option value="audi">audi</option>
+                            <option value="BMW">BMW</option>
+                            <option value="mercedes">mercedes</option>
+                        </select>
+                    </li>
+                    <li> Год выпуска <P> автомобиля:</P>
+                        <select name="" id="">
+                            <option value=""></option>
+                            <option value="2001">2001</option>
+                            <option value="2002">2002</option>
+                            <option value="2003">2003</option>
+                        </select>
+                    </li>
+                    <li> Комплектация: 
+                        <select name="" id="">
+                            <option value=""></option>
+                            <option value="audi">audi</option>
+                            <option value="BMW">BMW</option>
+                            <option value="mercedes">mercedes</option>
+                        </select>
+                    </li>
+                </ul>
+            </div>
+            <button class="buttonSearch">ПОИСК...</button>
+        </div>
+
+        <div class="searchTire border">
+            <h5>поиск шин</h5>
+            <ul>
+                <li> Размер:
+                    <select>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                    </select>
+                     / 
+                    <select>
+                        <option value="2">2</option>
+                        <option value="2">2</option>
+                    </select>
+                </li>
+                <li> R
+                    <select name="" id="">
+                        <option value=""></option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                    </select>
+                </li>
+                <li> Сезон:
+                        <input type="checkbox" id="summer">
+                        <label for="summer">лето</label>
+                    <p>
+                        <input type="checkbox" id="winter">
+                        <label for="winter">зима</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" id="both">
+                        <label for="both">всесез</label>
+                    </p>
+                </li>
+            </ul>
+            <button class="buttonSearch">ПОИСК...</button>
+        </div>
+
+        <div class="searchDisk border">
+            <div class="disk">
+                <h5>поиск дисков</h5>
+                <p> Диаметр<span> диска:</span>
+                </p>
+                    <select name="" id="">
+                        <option value=""></option>
+                        <option value="">15</option>
+                        <option value="">22</option>
+                        <option value="">31</option>
+                    </select>
+                <p>Количество <p>крепёжных <p> отверстий :</p></p>
+                </p>
+                    <select name="" id="">
+                        <option value=""></option>
+                        <option value="">2</option>
+                        <option value="">4</option>
+                    </select>
+                <p>Диаметр<p>расположения<p>крепёжных<p>отверстий :</p></p></p>
+                </p>
+                    <select name="" id="">
+                        <option value=""></option>
+                        <option value="">10</option>
+                        <option value="">15</option>
+                    </select>
+            </div>
+            <div class="dco">
+                <h6>ДЦО</h6>
+                <p>(диаметр<p>центрального<p>отверстия):</p></p>
+                </p>
+                    <select name="" id="">
+                        <option value=""></option>
+                        <option value="">5</option>
+                        <option value="">10</option>
+                        <option value="">15</option>
+                    </select>
+                <h6>ET</h6>
+                <p>(вылет диска):
+                </p>
+                    <select name="" id="">
+                        <option value=""></option>
+                        <option value="">12</option>
+                        <option value="">13</option>
+                        <option value="">14</option>
+                    </select>
+            </div>
+            <button class="buttonSearch">ПОИСК...</button>
         </div>
     </header>
 
@@ -57,11 +225,11 @@
 
         </aside>
 
-        <aside class="brand">
-
-        </aside>
-
         <div class="content">
+            
+        </aside>
+        
+        <aside class="brand">
 
         </div>
 

@@ -110,6 +110,7 @@ a:hover {
     height: 235px;
 }
 
+/* MENU */
 .menu {
     display: block;
     height: 40px;
@@ -122,16 +123,16 @@ ul {
     margin: 0;
 }
 
-.menu ul li {
+ul li {
     float: left;
-    padding: 6px 20px;
+    padding: 6px 15px;
     margin: 4px;
     list-style: none;
     border-radius: 15px;
 
 }
 
-.menu ul li:hover {
+.menu ul .m:hover {
     background-color: #1d6081;
 }
 
@@ -139,3 +140,191 @@ ul {
     color: #bfbfbf;
     text-decoration: none;
 }
+
+.purse {
+    padding: 6px 0;
+}
+
+.index {
+    padding: 2px;
+    margin: 8px 1px;
+    color: #bfbfbf;
+    font-family: sans-serif; 
+    font-size: 14px;
+}
+
+.amount {
+    padding: 0;
+    margin: 9px 15px 12px 0;
+    color: #1d6081;
+    font-size: 16px; 
+}
+
+.money {
+    margin: 5px 10px;
+    color: #1d6081;
+    font-size: 16px; 
+}
+
+/* SEARCH CAR*/
+
+.searchCar {
+    width: 380px;
+}
+
+.searchCar h5 {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    position: relative;
+    font-size: 12px;    
+}
+
+.searchCar ul li {
+    margin: 0;
+    padding: 0;
+    float: none;
+    clear: both;
+    font-size: 8px;
+    font-family: sans-serif;
+}
+
+.searchCar ul>li>select {
+    font-size: 8px;
+    height: 10px;
+}
+
+.carDisk, .carTire {
+    width: 180px;
+    float: left;
+    margin: 3px;
+}
+
+.carDisk h6 {
+    margin: 0;
+    padding: 0;
+    float: left;
+    font-size: 10px;
+}
+
+.carDisk ul li {
+    margin: 0;
+    padding: 0;
+    float: left;
+}
+
+.carDisk ul li p {
+    padding: 0;
+    margin: 0;
+}
+
+.carTire h6 {
+    margin: 0;
+    padding: 0;
+    float: right; 
+    font-size: 10px;
+}
+
+.carTire ul li {
+    margin: 0;
+    padding: 0;
+    float: left;
+}
+
+.carTire ul li p {
+    margin: 0;
+    padding: 0;
+}
+
+/* SEARCH TIRES */
+
+.searchTire {
+    width: 190px;
+    padding: 5px 10px;
+    margin: 10px 5px;
+}
+
+.searchTire h5 {
+    padding: 0;
+    margin: 0;
+    text-align: left;
+    /* position: relative; */
+    font-size: 12px;
+}
+
+.searchTire ul>li {
+    padding: 0;
+    margin: 0;
+    float: none;
+}
+
+.searchTire ul>li>p {
+    padding: 0;
+    margin: 0;
+    padding-left: 49px;
+}
+
+.searchTire ul>li>select {
+    font-size: 8px;
+    height: 10px;
+}
+
+/* SEARCH DISK */
+
+.searchDisk.border {
+    width: 270px;
+    float: right;
+}
+
+.searchDisk h5, h6 {
+    margin: 0;
+    padding: 0;
+}
+
+.searchDisk p {
+    padding: 0;
+    margin: 0;
+    font-size: 8px;
+}
+
+.searchDisk p>select {
+    font-size: 8px;
+    height: 10px;
+}
+
+.disk {
+    width: 150px;
+    float: left;
+}
+
+.dco {
+    padding: 5px;
+    width: 100px;
+    float: left;
+    border-left: 1px solid gray;
+}
+
+
+
+.border {
+    border: 1px solid gray;
+    border-radius: 20px;
+    float: left;
+    padding: 5px 10px;
+    margin: 10px 5px;
+    height: 135px;
+} 
+
+.buttonSearch {
+    clear: both;
+    float: right;
+    background-color: none;
+    border: none;
+    width: 50px;
+    height: 15px;
+    font-size: 8px;
+    font-family: sans-serif;
+    font-style: italic;
+    margin: 5px;
+}
+
