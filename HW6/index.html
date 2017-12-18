@@ -16,8 +16,8 @@
                 <li><p>(044)123-45-67</p></li>
                 <li><p>(044)567-89-10</p></li>
             </ul>
-            
         </div>
+
         <div class="form">
             <img class="man" src="img/man.png" alt="icon">
             <form action="#">
@@ -40,13 +40,236 @@
 
         <div class="menu">
             <ul>
-                <li><a href="">О КОМПАНИИ</a></li>
-                <li><a href="">ОПЛАТА</a></li>
-                <li><a href="">ДОСТАВКА</a></li>
-                <li><a href="">СТАТЬИ</a></li>
-                <li><a href="">КОНТАКТЫ</a></li>
-                <li><img src="img/purse.png" alt=""></li>
+                <li class="m"><a href="">О КОМПАНИИ</a></li>
+                <li class="m"><a href="">ОПЛАТА</a></li>
+                <li class="m"><a href="">ДОСТАВКА</a></li>
+                <li class="m"><a href="">СТАТЬИ</a></li>
+                <li class="m"><a href="">КОНТАКТЫ</a></li>
+                <li class="purse"><img src="img/purse.png" alt=""></li>
+                <li class="index">товаров:</li>
+                <li class="amount">0</li>
+                <li class="index">на сумму:</li>
+                <li class="money">0,00 грн.</li>
             </ul>
+        </div>
+
+
+
+
+
+        <div class="searchCar border">
+            <h5 class="f-size-tvelve f-bold">Поиск по автомобилю</h5>
+
+
+
+            <div class="carDisk">
+                <h6 class="f-size-ten f-bold">Диски:</h6>
+                
+                <ul>
+                    <li>
+                        <label for="mark">Марка <span class="color-gray">авто</span> 
+                        </label>
+                            <select class="select-size" id="mark">
+                                <option value=""></option>
+                                <option value="">audi</option>
+                                <option value="">BMW</option>
+                                <option value="">mercedes</option>
+                            </select>
+                    </li>
+                    <li>
+                        <label for="model"> Модель <p class="color-gray">автомобиля:</p>   
+                        </label>
+                            <select class="select-size" id="model">
+                                <option value=""></option>
+                                <option value="audi">audi</option>
+                                <option value="BMW">BMW</option>
+                                <option value="mercedes">mercedes</option>
+                            </select>
+                    </li>
+                    <li> 
+                        <label for="year">Год выпуска <P class="color-gray"> автомобиля:</P>
+                        </label> 
+                            <select class="select-size" id="year">
+                                <option value=""></option>
+                                <option value="2001">2001</option>
+                                <option value="2002">2002</option>
+                                <option value="2003">2003</option>
+                            </select>
+                    </li>
+                    <li> 
+                        <label for="complectation"> Комплектация:
+                        </label> 
+                            <select class="select-size" id="complectation">
+                                <option value=""></option>
+                                <option value="audi">audi</option>
+                                <option value="BMW">BMW</option>
+                                <option value="mercedes">mercedes</option>
+                            </select>
+                    </li>
+                </ul>
+            </div>
+
+
+
+            <div class="carTire">
+                <h6 class="f-size-ten f-bold">Шины:</h6>
+                <ul>
+                    <li>
+                        <label for="markt">Марка <span class="color-gray">авто</span> 
+                        </label>
+                            <select class="select-size" id="markt">
+                                    <option value=""></option>
+                                    <option value="">audi</option>
+                                    <option value="">BMW</option>
+                                    <option value="">mercedes</option>
+                            </select>
+                    </li>
+                    <li>
+                        <label for="modelt"> Модель <p class="color-gray">автомобиля:</p>   
+                        </label>
+                            <select class="select-size" id="modelt">
+                                <option value=""></option>
+                                <option value="audi">audi</option>
+                                <option value="BMW">BMW</option>
+                                <option value="mercedes">mercedes</option>
+                            </select>
+                    </li>
+                    <li> 
+                        <label for="yeart">Год выпуска <P class="color-gray"> автомобиля:</P>
+                        </label> 
+                            <select class="select-size" id="yeart">
+                                <option value=""></option>
+                                <option value="2001">2001</option>
+                                <option value="2002">2002</option>
+                                <option value="2003">2003</option>
+                            </select>
+                    </li>
+                    <li> 
+                        <label for="complectationt"> Комплектация:
+                        </label> 
+                            <select class="select-size" id="complectationt">
+                                <option value=""></option>
+                                <option value="audi">audi</option>
+                                <option value="BMW">BMW</option>
+                                <option value="mercedes">mercedes</option>
+                            </select>
+                    </li>
+                </ul>
+            </div>
+            <button class="buttonSearch">ПОИСК...</button>
+        </div>
+
+
+
+
+
+
+        <div class="searchTire border">
+            <h5 class="f-size-tvelve f-bold">поиск шин</h5>
+            <ul>
+                <li> 
+                    <label for="size"> Размер:</label>
+                    <select class="select-size" id="size">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                    </select>
+                     / 
+                    <select class="select-size" id="size">
+                        <option value="2">2</option>
+                        <option value="2">2</option>
+                    </select>
+                </li>
+                <li> R
+                    <select class="select-size" name="" id="">
+                        <option value=""></option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                    </select>
+                </li>
+                <li> Сезон:
+                        <input type="checkbox" id="summer">
+                        <label for="summer">лето</label>
+                    <p>
+                        <input type="checkbox" id="winter">
+                        <label for="winter">зима</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" id="both">
+                        <label for="both">всесез</label>
+                    </p>
+                </li>
+            </ul>
+            <button class="buttonSearch">ПОИСК...</button>
+        </div>
+
+
+
+
+
+
+        <div class="searchDisk border">
+
+
+
+            <div class="disk">
+                <h5 class="f-size-tvelve f-bold">поиск дисков</h5>
+                <ul>
+                    <li>
+                        <label for="diameter" class="f-size-eight"> Диаметр<span class="color-gray f-size-eight"> диска:</span>
+                        </label>
+                        <select class="select-size" id="diameter">
+                            <option value=""></option>
+                            <option value="">15</option>
+                            <option value="">22</option>
+                            <option value="">31</option>
+                        </select>
+                    </li>
+                
+                    <li>
+                        <label for="amount" class="f-size-eight"> Количество <p class="color-gray">крепёжных <p class="color-gray"> отверстий :</p></p>
+                        </label>
+                        <select class="select-size" id="amount">
+                            <option value=""></option>
+                            <option value="">2</option>
+                            <option value="">4</option>
+                        </select>
+                    </li>
+
+                    <li>
+                        <label for="location" class="f-size-eight"> Диаметр<p class="color-gray">расположения<p class="color-gray">крепёжных<p class="color-gray">отверстий :</p></p></p>
+                        </label>
+                        <select class="select-size" id="location">
+                            <option value=""></option>
+                            <option value="">10</option>
+                            <option value="">15</option>
+                        </select>
+                    </li>
+                </ul>
+            </div>
+        
+        
+
+            <div class="dco">
+                <h6 class="f-size-ten">ДЦО</h6>
+                <p class="color-gray">(диаметр<p class="color-gray">центрального<p class="color-gray">отверстия):</p></p>
+                </p>
+                    <select class="select-size" name="" id="">
+                        <option value=""></option>
+                        <option value="">5</option>
+                        <option value="">10</option>
+                        <option value="">15</option>
+                    </select>
+                <h6 class="f-size-ten">ET</h6>
+                <p class="color-gray">(вылет диска):
+                </p>
+                    <select class="select-size"  name="" id="">
+                        <option value=""></option>
+                        <option value="">12</option>
+                        <option value="">13</option>
+                        <option value="">14</option>
+                    </select>
+            </div>
+            <button class="buttonSearch">ПОИСК...</button>
         </div>
     </header>
 
@@ -54,14 +277,45 @@
     
     <div class="wrapper">
         <aside class="sidebar">
+            <div><p class="mar-pad-zero"><img src="img/brand.png" alt=""> <span> КАТАЛОГ ПРОДУКЦИИ:</span></p>
+            </div>
+            <div>
+                <p class="mar-pad-zero"><img src="img/tires.png" alt=""> <span> ШИНЫ</span></p>
+            </div>
+                <ul>
+                    <li><a href="">Наименование 1</a></li>
+                    <li><a href="">Наименование 2</a></li>
+                    <li><a href="">Наименование 3</a></li>
+                    <li><a href="">Наименование 4</a></li>
+                </ul>
 
-        </aside>
 
-        <aside class="brand">
+            <div>
+                <p class="mar-pad-zero"><img src="img/tires.png" alt=""> <span> ДИСКИ</span></p>
+                <ul>
+                    <li><a href="">Наименование 1</a></li>
+                    <li><a href="">Наименование 2</a></li>
+                    <li><a href="">Наименование 3</a></li>
+                    <li><a href="">Наименование 4</a></li>
+                </ul>
+            </div>
 
+            <div>
+                <p class="mar-pad-zero"><img src="img/tires.png" alt=""> <span> БОЛТЫ</span></p>
+                <ul>
+                    <li><a href="">Наименование 1</a></li>
+                    <li><a href="">Наименование 2</a></li>
+                    <li><a href="">Наименование 3</a></li>
+                    <li><a href="">Наименование 4</a></li>
+                </ul>
+            </div>
         </aside>
 
         <div class="content">
+            
+        </aside>
+        
+        <aside class="brand">
 
         </div>
 
