@@ -120,6 +120,7 @@ a:hover {
     height: 40px;
     width: 910px;
     background-color: #191b1e;
+    border-radius: 10px;
 }
 
 ul {
@@ -399,10 +400,18 @@ ul li {
     color: #154467;
 }
 
+                                                            /* WRAPPER */
+
+.wrapper {
+    width: 900px;
+}
+
+
                                                                 /* ASIDE */
 .sidebar {
     float: left;
     clear: both;
+    overflow: hidden;
 }
 
 .brand {
@@ -414,28 +423,101 @@ ul li {
     position: relative;
 }
 
-.sidebar ul li, .brand ul li {
+.sidebar li, .brand li {
     float: left;
+}
+
+.sidebar li:hover img {
+    /* margin-top: 8px; */
+    background-position-y: 8px;
+}
+
+.brand li {
+    float: left;
+    list-style: square;
+}
+
+.sidebar .list img{
+    width: 8px;
+    height: 7px;
+    margin: 2px;
 }
 
 .sidebar div, .brand div {
     clear: both;
+    /* display: inline-block; */
     border: 1px solid #77858b; 
     border-radius: 15px;
-    padding: 2px 4px;
-    margin: 1px;
+    padding: 3px 4px;
+    margin: 0;
     height: 25px;
+    width: 180px;
 }
 
-.sidebar div img {
-
+.sidebar img, .brand img {
+    width: 20px;
+    height: 20px;
 }
+
+.sidebar a, .brand a {
+    color: #465961;
+    text-decoration: none;
+}
+/* 
+.sidebar li:hover {
+    color: #0c3256;
+    font-style: italic;
+    font-weight: bold;
+    text-decoration: underline;
+    filter: grayscale(0);
+    -webkit-filter: grayscale(0);
+} */
+
+.sidebar a:hover, .brand a:hover {
+    color: #0c3256;
+    font-style: italic;
+    font-weight: bold;
+    text-decoration: underline;
+}
+.sidebar .list img {
+    /* filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    transition: .3s ease-in-out */
+}
+/* .sidebar img.list:hover {
+    filter: grayscale(0);
+    -webkit-filter: grayscale(0);
+} */
+.sub-title-width {
+    max-width: 150px;
+}
+
+.title-span-w {
+    min-width: 150px;
+}
+/* .sidebar div img {
+
+} */
 
 .sidebar div span, .brand div span {
-    padding: 6px 3px;
-    width: 150px;
+    padding: 6px 2px;
+    width: 100px;
     display: inline-block;
+    color: #114165;
     font-size: 12px;
+    font-family: 'Lucida Sans Unicode', sans-serif;
+}
+
+
+
+.button-choose {
+    background-color: #175173;
+    color: #e5e9ea;
+    font-size: 11px;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 80px;
+    height: 25px;
+    border-radius: 10px;
 }
 
 
@@ -443,20 +525,21 @@ ul li {
 
 
 .content {
-    width: 560px;
+    width: 460px;
     float: left;
-    background-color: #e3e6e7;
+    background: linear-gradient(to bottom,#e5e7e8, #93a7b0);
+    /* background-color: #e3e6e7; */
     margin: 10px;
     padding: 5px;
     /* clear: both; */
 }
 
 .content div {
-    display: inline-block;
+    /* display: inline-block; */
     text-align: center;
-    /* float: left; */
-    margin: 16px;
-    min-width: 150px;
+    float: left;
+    margin: 6px;
+    min-width: 130px;
 
 }
 
@@ -465,6 +548,21 @@ ul li {
     margin: 0;
     text-align: center;
 }
+
+.tire-name {
+    color: #206988;
+    font-family: 'Lucida Sans Unicode', sans-serif;
+    font-size: 15px;
+}
+
+.tire-price {
+    color: #114165;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-style: italic;
+}
+
 
                                                 /* FOOTER */
 
