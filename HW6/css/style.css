@@ -400,24 +400,30 @@ ul li {
 }
 
                                                                 /* ASIDE */
-
 .sidebar {
-    width: 230px;
-    clear: both;
     float: left;
+    clear: both;
+}
+
+.brand {
+    float: right;
+}
+
+.sidebar, .brand {
+    width: 200px;
     position: relative;
 }
 
-.sidebar ul li {
+.sidebar ul li, .brand ul li {
     float: left;
 }
 
-.sidebar div {
+.sidebar div, .brand div {
     clear: both;
     border: 1px solid #77858b; 
     border-radius: 15px;
     padding: 2px 4px;
-    margin: 5px;
+    margin: 1px;
     height: 25px;
 }
 
@@ -425,9 +431,71 @@ ul li {
 
 }
 
-.sidebar div span {
+.sidebar div span, .brand div span {
     padding: 6px 3px;
     width: 150px;
     display: inline-block;
     font-size: 12px;
 }
+
+
+                                                                /* CONTENT */
+
+
+.content {
+    width: 560px;
+    float: left;
+    background-color: #e3e6e7;
+    margin: 10px;
+    padding: 5px;
+    /* clear: both; */
+}
+
+.content div {
+    display: inline-block;
+    text-align: center;
+    /* float: left; */
+    margin: 16px;
+    min-width: 150px;
+
+}
+
+.content div p {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+                                                /* FOOTER */
+
+.footer {
+    clear: both;
+}
+
+.footer img {
+    margin: 10px;
+}
+
+.footer-brand {
+    margin: 10px 100px;
+    /* display: inline;
+    text-align: center; */
+}
+
+.footer-menu {
+    width: 900px;
+    height: 100px;
+    margin: 5%;
+    background-color: #213a4d;
+}
+
+.footer-menu ul li a {
+    color: white;
+}
+
+.footer-menu p {
+    clear: both;
+    color: #7f4740;
+}
+
+
