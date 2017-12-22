@@ -6,37 +6,35 @@
     margin-right: auto;
 }
 
+ul li {
+    float: left;
+    list-style: none;
+}
+
+
+
                                                     /* HEADER */
 
 .header {
-    width: 900px;
+    width: 90%;
+    margin: 0 5%;
 }
 
 .phone {
     display: block;
-    /* position: absolute; */
-    /* height: 16px;
-    width: 400px; */
-    margin: 0;
-    padding: 0;
-    /* margin-left: 45px; */
-}
-
-.phone ul {
-    padding: 0;
-    margin: 0;
 }
 
 .phone ul > li {
-    float: left;
     list-style: none;
     padding: 5px;
-    margin: 16px 0;
+    margin: 16px 0 0;
     height: 26px;
 }
 
 .phone ul > li > p {
-    margin: 0;
+    font-size: 18px;
+    color: #5e696d;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .form {
@@ -44,73 +42,75 @@
     background-color: #1b5b7c;
     width: 495px;
     height: 26px;
-    border-radius: 5px;
-    margin-top: 16px;
+    border-radius: 3px;
+    margin: 16px 0 0 0;
 }
 
 .man {
     float: left;
-    padding: 3px;
+    padding: 3px 3px 3px 6px;
 }
 
-[type="text"], [type="password"] {
-    width: 114px;
+.input-text, .input-password {
+    width: 113px;
     max-height: 16px;
-    margin: 4px 1px;
+    margin: 4px 2px;
     padding: 0;
     border: none;
 }
 
-[type="text"]::-webkit-input-placeholder, 
-[type="password"]::-webkit-input-placeholder {
-    color: #5e696d;
+.input-text::-webkit-input-placeholder, 
+.input-password::-webkit-input-placeholder {
+    color: #97a2a6;
     font-size: 11px;
-    padding: 4px;
+    padding: 4px 4px 4px 4px;
+    vertical-align: middle;
+    font-family: 'Lucida Sans Unicode', Arial, sans-serif;
 }
 
-[type="submit"] {
+.input-submit, .entrance {
     background-color: #1b5b7c;
     color: white;
     border: none;
-    margin: 0;
-    padding: 0;
-    font-family: sans-serif;
-    font-size: 12px;
 }
 
-.entrance {
-    border-right: 1px solid white;
-    padding: 4px;
+.form span {
+    color: white;
 }
 
-a:hover {
+.form a:hover, .input-submit:hover, .entrance:hover  {
     color: #bfbfbf;
+    text-decoration: underline;
 }
 
 .forgot {
     color: white;
-    font-family: sans-serif;
     font-size: 12px;
-    padding: 5px 20px 5px 10px;
+    padding: 5px 2px 5px 10px;
+    text-decoration: none;
 }
 
-.map {
+                                                                        /* NAV */
+
+.nav {
     float: left;
     border: 1px solid #bfbfbf;
     border-radius: 15px;
-    padding: 3px;
-    margin: 16px 15px 5px;
+    padding: 1px 3px 1px 3px;
+    margin: 16px 10px 5px 10px;
 }
 
-.map a {
+.nav a {
     padding: 5px;
+}
+
+.nav a:hover {
+    background-color: #bfbfbf;
 }
 
 .image {
     clear: both;
-    padding: 0;
-    margin: 0;
-    width: 910px;
+    width: 100%;
     height: 235px;
 }
 
@@ -118,7 +118,7 @@ a:hover {
 .menu {
     display: block;
     height: 40px;
-    width: 910px;
+    width: 900px;
     background-color: #191b1e;
     border-radius: 10px;
 }
@@ -134,7 +134,6 @@ ul li {
     margin: 4px;
     list-style: none;
     border-radius: 15px;
-
 }
 
 .menu ul .m:hover {
@@ -179,16 +178,11 @@ ul li {
 }
 
 .searchCar h5 {
-    padding: 0;
-    margin: 0;
     text-align: center;
     position: relative;
-   /*  font-size: 12px;     */
 }
 
 .searchCar ul li {
-    margin: 0;
-    padding: 0;
     float: none;
     clear: both;
     font-size: 8px;
@@ -196,8 +190,6 @@ ul li {
 }
 
 .searchCar ul>li>select {
-    /* font-size: 8px;
-    height: 10px; */
     display: inline-block;
     vertical-align: middle;
 }
@@ -212,7 +204,6 @@ ul li {
     margin: 0;
     padding: 0;
     float: left;
-   /*  font-size: 10px; */
 }
 
 .carDisk ul li, .carTire ul li, .disk ul li {
@@ -228,43 +219,14 @@ ul li {
     position: absolute;
 }
 
-.carDisk ul li label p {
-    padding: 0;
-    margin: 0;
-} 
-
 .carDisk ul li select, .carTire ul li select, .disk select {
     margin-left: 80px;
 }
 
 .carTire h6 {
-    margin: 0;
-    padding: 0;
     float: right; 
-    /* font-size: 10px; */
 }
 
-/* .carTire ul li {
-    margin: 0;
-    padding: 0;
-    float: left;
-} */
-
-.carTire ul li p {
-    margin: 0;
-    padding: 0;
-}
-/* 
-.carTire ul li label {
-    padding: 0;
-    margin-left: 50px;
-    display: inline-block;
-    position: absolute;
-}
-
-.carTire ul li select {
-    margin-left: 100px;
-} */
 
                                                     /* SEARCH TIRES */
 
@@ -276,28 +238,33 @@ ul li {
 }
 
 .searchTire h5 {
-    padding: 0;
-    margin: 0;
     text-align: left;
-    /* font-size: 12px; */
 }
 
 .searchTire ul>li {
-    padding: 0;
-    margin: 0;
     float: none;
 }
 
-.searchTire ul>li>p {
-    padding: 0;
-    margin: 0;
-    padding-left: 49px;
+.searchTire .razmer {
+    margin:5px 5px 5px 4px;
 }
 
-/* .searchTire ul>li>select {
-     font-size: 8px;
-    height: 10px;
-} */ 
+.searchTire .radius {
+    margin: 5px 5px 5px 34px;
+}
+
+.searchTire .season {
+    margin: 5px 0 0 5px;
+    position: relative;
+}
+
+.searchTire .checbox1 {
+    margin: 2px 0 2px 7px;
+}
+.searchTire .checbox2 {
+    margin: 2px 0 2px 37px;
+}
+
 
                                                     /* SEARCH DISK */
 
@@ -307,35 +274,25 @@ ul li {
     position: relative;
 }
 
-.searchDisk h5, h6 {
-    margin: 0;
-    padding: 0;
-}
-
-.searchDisk p {
-    padding: 0;
-    margin: 0;
-    font-size: 8px;
-}
-
-.searchDisk p>select {
+.searchDisk select {
     font-size: 8px;
     height: 10px;
 }
 
 .disk {
     width: 130px;
-    float: left;
 }
 
+.searchDisk .dco {
+    position: relative;
+    overflow: hidden;
+}
 .dco {
     padding: 5px;
     width: 50px;
-    float: left;
     border-left: 1px solid #77858b;
 }
 
-                                                            /* COMMON */
 
 .border {
     border: 1px solid #77858b;
@@ -344,10 +301,268 @@ ul li {
     padding: 5px 10px;
     margin: 10px 10px;
     height: 135px;
+    box-shadow: 4px 4px 8px rgba(120, 120, 120, 0.8)
 } 
+                                                           
+
+.buttonSearch {
+    clear: both;
+    float: right;
+    background-color: rgba(1, 1, 1, 0);
+    border: none;
+    border-bottom: 2px solid #77858b; 
+    margin: 0;
+    padding: 0;
+    width: 40px;
+    height: 15px;
+    font-size: 8px;
+    font-family: sans-serif;
+    font-style: italic;
+    position: absolute;
+    bottom: 5px;
+    right: 20px;
+    color: #154467;
+}
+
+                                                            /* WRAPPER */
+
+.wrapper {
+    width: 90%;
+    margin: 0 5%;
+    position: relative;
+    overflow: hidden;
+}
 
 
-.mar-pad-zero {
+                                                                /* ASIDE */
+.sidebar {
+    float: left;
+    clear: both;
+    overflow: hidden;
+}
+
+
+.sidebar, .brand {
+    width: 22%;
+    position: relative;
+}
+
+
+.sidebar li {
+    float: left;
+    padding: 10px 0 6px;
+    margin: 0 0 0 45px;
+    list-style-image: url(../img/circle.png);
+}
+
+.sidebar li:hover {
+    list-style-image: url(../img/circleact.png);
+}
+
+
+
+.sidebar .list img{
+    width: 8px;
+    height: 7px;
+    margin: 2px;
+}
+
+.sidebar div, .brand div {
+    clear: both;
+    border: 1px solid #77858b; 
+    border-radius: 15px;
+    padding: 3px 4px;
+    margin: 0;
+    height: 25px;
+    width: 180px;
+}
+
+.sidebar div.title, .brand div.title  {
+    margin: 2px 0 13px;
+    box-shadow: 2px 2px 7px rgba(120, 120, 120, 0.8)
+}
+
+.sidebar img, .brand img {
+    width: 20px;
+    height: 20px;
+}
+
+.sidebar a {
+    color: #465961;
+    text-decoration: none;
+}
+
+
+.sidebar a:hover, .brand a:hover {
+    color: #0c3256;
+    font-style: italic;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.sub-title-width {
+    max-width: 150px;
+}
+
+.title-span-w {
+    min-width: 150px;
+}
+
+.sidebar div span, .brand div span {
+    padding: 6px 2px;
+    width: 100px;
+    display: inline-block;
+    color: #114165;
+    font-size: 12px;
+}
+
+
+                                                                /* CONTENT */
+
+.content {
+    max-width: 54%;
+    float: left;
+    background: linear-gradient(to bottom,#e5e7e8, #93a7b0);
+    margin: 10px 0;
+    padding: 0 5px 15px;
+}
+
+.content div {
+    /* display: inline-block; */
+    text-align: center;
+    float: left;
+    margin: 16px 11px;
+    min-width: 130px;
+
+}
+
+.content div p {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.tire-name {
+    color: #206988;
+    font-size: 15px;
+}
+
+.tire-price {
+    color: #114165;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-style: italic;
+}
+
+
+                                                /* BRAND */
+.brand {
+    float: right;
+}
+
+.brand li {
+    float: left;
+    min-width: 100px;
+}
+
+.brand li label {
+    color: #465961;
+    padding-left: 15px; 
+}
+
+.brand li label:hover {
+    color: #0c3256;
+    font-style: italic;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.brand div.sub-title-margin {
+    margin-left: 15px;
+}
+
+.button-choose {
+    background-color: #175173;
+    color: #e5e9ea;
+    font-size: 11px;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 80px;
+    height: 25px;
+    border-radius: 13px;
+    margin: 10px 40px;
+}
+
+.button-choose:hover {
+    background-color:#2f9fe0; 
+}
+
+
+
+                                                /* FOOTER */
+
+.footer {
+    width: 90%;
+    margin: 0 5%;
+    clear: both;
+}
+
+.footer img {
+    margin: 10px;
+}
+
+.footer-brand {
+    margin: 10px 50px;
+}
+
+.footer-menu {
+    position: relative;
+    overflow: hidden;
+    width: 90%;
+    height: 100px;
+    margin: 0 5%;
+    background-color: #213a4d;
+}
+
+.footer-menu .footer-ul li {
+    margin: 10px 0;
+}
+
+.footer-menu ul li a {
+    color: #bec6c9;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 10px;
+    text-decoration: none;
+}
+
+.footer-ul {
+    width: 40%;
+    margin: 0 30%;
+}
+
+.footer-menu span {
+    color: #bec6c9;
+}
+
+.footer-menu a:hover {
+    color: #52abcb;
+}
+
+.footer-menu p {
+    clear: both;
+    color: #7f4740;
+    width: 100%;
+    text-align: center;
+    font-size: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+                                                                    /* COMMON */
+
+
+ .mar-pad-zero {
     margin: 0;
     padding: 0;
 }
@@ -355,12 +570,23 @@ ul li {
 .f-size-tvelve {
     font-size: 12px;
 }
+
+.f-size-eleven {
+    font-size: 11px;
+}
+
 .f-size-ten {
     font-size: 10px;
 }
+
+.f-size-nine {
+    font-size: 9px;
+}
+
 .f-size-eight {
     font-size: 8px;
 }
+
 .fl-left {
     float: left;
 }
@@ -379,221 +605,6 @@ ul li {
     height: 14px;
 }
 
-.buttonSearch {
-    clear: both;
-    float: right;
-    background-color: rgba(1, 1, 1, 0);
-    border: none;
-    border-bottom: 2px solid #77858b; 
-    margin: 0;
-    padding: 0;
-    width: 40px;
-    height: 15px;
-    font-size: 8px;
-    font-family: sans-serif;
-    font-style: italic;
-    /* margin: 5px;
-    margin-right: 15px; */
-    position: absolute;
-    bottom: 5px;
-    right: 20px;
-    color: #154467;
+.f-family-Lucida {
+    font-family: 'Lucida Sans Unicode', Arial, sans-serif
 }
-
-                                                            /* WRAPPER */
-
-.wrapper {
-    width: 900px;
-}
-
-
-                                                                /* ASIDE */
-.sidebar {
-    float: left;
-    clear: both;
-    overflow: hidden;
-}
-
-.brand {
-    float: right;
-}
-
-.sidebar, .brand {
-    width: 200px;
-    position: relative;
-}
-
-.sidebar li, .brand li {
-    float: left;
-}
-
-.sidebar li:hover img {
-    /* margin-top: 8px; */
-    background-position-y: 8px;
-}
-
-.brand li {
-    float: left;
-    list-style: square;
-}
-
-.sidebar .list img{
-    width: 8px;
-    height: 7px;
-    margin: 2px;
-}
-
-.sidebar div, .brand div {
-    clear: both;
-    /* display: inline-block; */
-    border: 1px solid #77858b; 
-    border-radius: 15px;
-    padding: 3px 4px;
-    margin: 0;
-    height: 25px;
-    width: 180px;
-}
-
-.sidebar img, .brand img {
-    width: 20px;
-    height: 20px;
-}
-
-.sidebar a, .brand a {
-    color: #465961;
-    text-decoration: none;
-}
-/* 
-.sidebar li:hover {
-    color: #0c3256;
-    font-style: italic;
-    font-weight: bold;
-    text-decoration: underline;
-    filter: grayscale(0);
-    -webkit-filter: grayscale(0);
-} */
-
-.sidebar a:hover, .brand a:hover {
-    color: #0c3256;
-    font-style: italic;
-    font-weight: bold;
-    text-decoration: underline;
-}
-.sidebar .list img {
-    /* filter: grayscale(100%);
-    -webkit-filter: grayscale(100%);
-    transition: .3s ease-in-out */
-}
-/* .sidebar img.list:hover {
-    filter: grayscale(0);
-    -webkit-filter: grayscale(0);
-} */
-.sub-title-width {
-    max-width: 150px;
-}
-
-.title-span-w {
-    min-width: 150px;
-}
-/* .sidebar div img {
-
-} */
-
-.sidebar div span, .brand div span {
-    padding: 6px 2px;
-    width: 100px;
-    display: inline-block;
-    color: #114165;
-    font-size: 12px;
-    font-family: 'Lucida Sans Unicode', sans-serif;
-}
-
-
-
-.button-choose {
-    background-color: #175173;
-    color: #e5e9ea;
-    font-size: 11px;
-    font-family: Arial, Helvetica, sans-serif;
-    width: 80px;
-    height: 25px;
-    border-radius: 10px;
-}
-
-
-                                                                /* CONTENT */
-
-
-.content {
-    width: 460px;
-    float: left;
-    background: linear-gradient(to bottom,#e5e7e8, #93a7b0);
-    /* background-color: #e3e6e7; */
-    margin: 10px;
-    padding: 5px;
-    /* clear: both; */
-}
-
-.content div {
-    /* display: inline-block; */
-    text-align: center;
-    float: left;
-    margin: 6px;
-    min-width: 130px;
-
-}
-
-.content div p {
-    padding: 0;
-    margin: 0;
-    text-align: center;
-}
-
-.tire-name {
-    color: #206988;
-    font-family: 'Lucida Sans Unicode', sans-serif;
-    font-size: 15px;
-}
-
-.tire-price {
-    color: #114165;
-    font-size: 16px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-    font-style: italic;
-}
-
-
-                                                /* FOOTER */
-
-.footer {
-    clear: both;
-}
-
-.footer img {
-    margin: 10px;
-}
-
-.footer-brand {
-    margin: 10px 100px;
-    /* display: inline;
-    text-align: center; */
-}
-
-.footer-menu {
-    width: 900px;
-    height: 100px;
-    margin: 5%;
-    background-color: #213a4d;
-}
-
-.footer-menu ul li a {
-    color: white;
-}
-
-.footer-menu p {
-    clear: both;
-    color: #7f4740;
-}
-
-
