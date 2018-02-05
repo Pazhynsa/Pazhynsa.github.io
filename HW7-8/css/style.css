@@ -13,11 +13,13 @@
   font-style: normal; }
 
 .body {
-  padding: 10px 720px;
+  margin-left: auto;
+  margin-right: auto;
   width: 960px;
   background-image: url(../img/960/bg.jpg);
   background-color: #704d7e;
-  background-size: 2400px 945px;
+  background-size: cover;
+  background-clip: content-box;
   background-repeat: no-repeat;
   color: white;
   font-size: 18px;
@@ -351,16 +353,18 @@
 
 @media screen and (max-width: 480px) and (min-width: 321px) {
   .body {
+    max-width: 480px;
     width: 100%;
     padding: 0;
-    margin: 0; }
+    margin: 0;
+    height: 2800px; }
   .logo {
     float: none;
     width: 30%;
     margin: 70px 35% 5px 35%; }
   .menu_480 {
     float: none;
-    height: 175px;
+    height: 150px;
     width: 52%;
     margin: 20px 24%;
     text-align: center;
@@ -448,16 +452,26 @@
     width: 97%;
     height: max-content; }
   .menu_footer {
-    height: 114px;
+    height: 170px;
     width: 100%;
-    margin-bottom: 0px; }
+    margin-bottom: 0px;
+    background-image: url(../img/960/footer-bg-480.jpg);
+    background-size: auto 100%; }
   .navigation_footer {
-    height: 130px;
-    padding-top: 30px; }
+    height: 50px;
+    padding-top: 30px;
+    overflow: hidden;
+    background-image: none; }
+  .navigation__item_footer {
+    float: left;
+    list-style: none;
+    margin: 10px 8px 10px 8px; }
+  .navigation__link {
+    font-size: 20px; }
   .footer__p {
-    top: 80px;
-    left: 74%;
+    position: static;
+    width: 100%;
+    margin-top: 30px;
     font-size: 0.6em;
-    font-style: italic;
     font-weight: 600;
-    background-size: contain; } }
+    text-align: center; } }
