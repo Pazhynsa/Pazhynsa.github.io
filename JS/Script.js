@@ -59,7 +59,7 @@
 
 
 
-// CYCLE DO WHILE(ДЕЛАЙ ПОКА)
+// CYCLE DO WHILE(ДЕЛАЙ пока)
 
 // var j=0;
 // do {
@@ -75,15 +75,15 @@
 // for (var k=0; k<4; k++) {
 //     console.log('k=', k);
 // }
+ 
 
+// var test=[1,2,3,4,5];
+// console.log('test = ', test);
 
-var test=[1,2,3,4,5];
-console.log('test = ', test);
-
-for (var k=0; k<test.length; k++) {
-    console.log('test[k] = ', test[k]);
-    debugger;
-    console.log('k = ', k);
+// for (var k=0; k<test.length; k++) {
+//     console.log('test[k] = ', test[k]);
+//     debugger;
+//     console.log('k = ', k);
 }
 
 // for (var k=test.length-1; k>=0; k--) {
