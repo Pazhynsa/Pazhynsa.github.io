@@ -69,7 +69,7 @@ var makePage = {
         input.setAttribute('type', 'button');
         input.setAttribute('value', this.buttonText);
         input.setAttribute('href', 'http://google.com/');
-        
+        input.className += ' btn btn-info';
     },
     
     makeStyle: function(){
@@ -89,21 +89,21 @@ var makePage = {
         div.style.зфввштпDown = '50px';
     },
 
-    makeBootstrapStyle: function(){
+   /*  makeBootstrapStyle: function(){
         var head = document.querySelector('head');
         var link = document.createElement('link');
         head.appendChild(link);
         link.setAttribute('rel', 'stylesheet');
         link.setAttribute('href', 'https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css');
         link.setAttribute('integrity', 'sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B');
-        link.setAttribute('crossorigin', 'anonymous');
+        link.setAttribute('crossorigin', 'anonymous'); */
 
 
         // <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" 
         // integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" 
         // crossorigin="anonymous">
 
-    }
+   // }
 }
 
 
@@ -114,5 +114,5 @@ makePage.makeOrderedList();
 makePage.makeQuestions();
 makePage.makeVariants();
 makePage.makeButton();
-makePage.makeBootstrapStyle();
+// makePage.makeBootstrapStyle();
 makePage.makeStyle();
